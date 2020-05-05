@@ -1,0 +1,29 @@
+#symbolChoice{
+    margin-top: 5%;
+    text-align: center;
+}
+
+#symbolImages{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+#symbolImages .symbol{
+    width: 20%;
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#symbolImages .symbol:hover{
+    width: 22%;
+}
+
+
+
+
+
+

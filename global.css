@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+@import url('./src/SymbolChoice/styles.css');
+@import url('./src/InsertName/styles.css');
+@import url('./src/Game/styles.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Concert One', cursive;
+    letter-spacing: 3px;
+}
+
+.container{
+    margin: auto;
+    max-width: 1000px;
+}
+
+body{
+    background: #222;
+}
+
+
+h1{
+    padding: 2%;
+    font-size: 36px;
+    color: white;
+}
+
+.logo{
+    margin: 30px;
+    margin-bottom: 30px;
+    background-image: url("./images/logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    animation: moveLeftToRight .6s linear;
+}
+
+#symbolChoice, #insertName{
+    animation: moveLeftToRight .4s linear;
+}   
+
+#winner{
+    animation: winnerAnimation .2s linear;
+}
+
+.symbolPlayed{
+    animation: symbolFade .2s linear;
+}
+
+@keyframes moveLeftToRight{
+    0%{
+        opacity: 0;
+        margin-right: 100px;
+    }
+    90%{
+        opacity: 0.5;
+        margin-left: 100px;
+    }
+}
+
+@keyframes winnerAnimation{
+    from{
+        opacity: 0;
+        top: 33%;
+        bottom: 23%;
+        right: 34%;
+        left: 34%;
+        width: 32%;
+        height: 54%;
+    }
+}
+
+@keyframes symbolFade{
+    from{
+        opacity: 0;
+        width: 70px;
+    }
+}

@@ -1,0 +1,55 @@
+#insertName{
+    margin-top: 5%;
+    display: none;
+    text-align: center;
+    animation: animation .4s linear;
+}
+
+#inputs{
+    margin: auto;
+    width: 400px;
+    text-align: center;
+}
+
+input{
+    margin-top: 10px;
+    text-align: center;
+    width: 370px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 20px;
+    color: white;
+    outline: none;
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-radius: 100px;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+input:active{
+    height: 50px;
+}
+
+.button{
+    margin-top: 20px;
+    height: 40px;
+    width: 370px;
+    font-size: 22px;
+    background: linear-gradient(180deg, #F59E35 0%, #ED6B37 100%);
+    color: #222;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.button:hover{
+    background: linear-gradient(180deg, #F59E35 50%, #ED6B37 100%);
+}
+
+
+
+

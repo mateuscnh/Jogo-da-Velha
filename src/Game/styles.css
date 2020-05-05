@@ -1,0 +1,229 @@
+#game{
+    display: none;
+}
+
+#logo2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: -30px 30px;
+    background-image: url("../../images/logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    transition: .2s;
+}
+
+#header h1{
+    font-size: 20px;
+}
+
+#contentHeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*background: linear-gradient(180deg, rgba(51,51,51,1) 0%, rgba(34,34,34,1) 100%);*/
+    border-radius: 0 0 50px 50px;
+}
+
+.player{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding-left: 40px;
+}
+
+.player h1{
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+#scoreboard{
+    flex: 1;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(180deg, #F59E35 0%, #ED6B37 100%);
+}
+
+#scoreboard h1{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#scoreH1{
+    color: #222;
+}
+
+.valueScore h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.valueScore{
+    flex: 1;
+    background: #222;
+    border-radius: 6px;
+    margin: 0 5px;
+}
+
+#valueScore2{
+    flex: 1;
+    border-radius: 6px;
+    background: #222;
+    margin: 0 5px;
+}
+
+
+#symbolPlayer{
+    order: 1;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+}
+
+#symbolComputer{
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+}
+
+/*Tela Tabuleiro*/
+.boardImage{
+    flex: 1;
+    margin: auto;
+    background-image: url("../../images/board.png");
+    background-position: center;
+    background-size: cover;
+    width: 315px;
+    height: 315px;
+}
+
+.board{
+    margin: auto;
+    margin-top: 50px;
+    padding: 50px;
+    width: 500px;
+    animation: boardAnimation .5s linear;
+}
+
+@keyframes boardAnimation{
+    from{
+        opacity: 0;
+    }
+}
+
+#a{
+    margin: auto;
+    width: 315px;
+    padding: 0 0 4px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#b{
+    margin: auto;
+    width: 315px;
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#c{
+    margin: auto;
+    width: 315px;
+    padding: 4px 0 0 0;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.area{
+    text-align: center;
+    line-height: 9rem;
+    width: 100px;
+    height: 100px;
+    background: none; 
+    cursor: pointer; 
+}
+
+.symbolPlayed{
+    margin: auto;  
+    padding: 5px; 
+    width: 50px;
+    height: 50px;
+    transition: .2s;
+}
+
+.symbolPlayed:hover{
+    width: 54px;
+    height: 54px;
+}
+
+#winner{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    right: 35%;
+    width: 30%;
+    height: 380px;
+    padding: 50px;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px;
+    background: rgba(34, 34, 34, .9);
+}
+
+#symbolWinner{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin: 40px;
+}
+
+#playAgain{
+    margin: auto;
+    color: #F59E35;
+    font-size: 40px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#playAgain:hover{
+    color: #ED6B37;
+    font-size: 38px;
+}
+
+@media (max-width: 700px){
+    .player{
+        flex-direction: column;
+        padding: 0 80px;
+        padding-left: 100px;
+    }
+    #symbolPlayer{
+        order: -1;
+    }
+    #winner{
+        top: 37%;
+        left: 20%;
+        right: 20%;
+        width: 60%;
+    }
+}
