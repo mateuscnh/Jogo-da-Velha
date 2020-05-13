@@ -89,6 +89,7 @@
 #symbolPlayer{
     order: 1;
     margin: 10px;
+    background-image: url('../../images/symbol_x.png');
     background-position: center;
     background-size: cover;
     width: 60px;
@@ -97,6 +98,7 @@
 
 #symbolComputer{
     margin: 10px;
+    background-image: url('../../images/symbol_o.png');
     background-position: center;
     background-size: cover;
     width: 60px;

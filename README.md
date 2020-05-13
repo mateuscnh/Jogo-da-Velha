@@ -7,8 +7,6 @@
 - O objetivo é conseguir três círculos ou três xis em linha, quer horizontal, vertical ou diagonal, e ao mesmo tempo, quando possível, impedir o adversário de ganhar na próxima jogada.
 
 ## TELAS DO JOGO
-O usuário informa qual o símbolo que deseja jogar, "X" ou "O".
-![image](imagesGitHub/screen1.png)
 O usuário informa qual o seu nome.
 ![image](imagesGitHub/screen2.png)
 O usuário joga clicando em uma área do tabuleiro.

@@ -6,28 +6,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="./src/css/global.css">
     <script src="https://kit.fontawesome.com/7588e8cffb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="symbolChoice">
-        <div class="container">
-            <div class="logo"></div>
-            <h1>FAÇA SUA ESCOLHA</h1>
-            <div id="symbolImages">
-                <img class="symbol" src="images/symbol_x.png" symbol="">
-                <img class="symbol" src="images/symbol_o.png" symbol="">
-            </div>
-        </div>
-        <!--Container-->
-    </div>
-
     <div id="insertName">
         <div class="container">
             <div class="logo"></div>
             <h1>DIGITE SEU NOME</h1>
-            <div id="inputs">
+            <div id="inputsName">
                 <input id="namePlayer" autofocus type="text" placeholder="NOME">
                 <input class="button" type="button" value="CONFIRMAR" onclick="buttonConfirm()">
             </div>
@@ -36,11 +24,6 @@
     </div>
 
     <div id="game">
-        <div id="winner">
-            <h1 id="winnerText">VENCEDOR</h1>
-            <div id="symbolWinner"></div>
-            <i id="playAgain" class="fas fa-undo-alt" title="Jogar Novamente" onclick="game()"></i>
-        </div>
         <div id="header">
             <div class="container">
                 <div id="contentHeader">
@@ -66,7 +49,7 @@
                     <div class="player">
                         <div id="symbolComputer"></div>
                         <div>
-                            <h1>Computer</h1>
+                            <h1>Player_2</h1>
                         </div>
                     </div>
                 </div>
@@ -74,7 +57,6 @@
             <!--Container-->
         </div>
         <!--Header-->
-
 
         <div class="board">
             <div class="container">
@@ -97,13 +79,18 @@
                 </div>
             </div>
             <!--Container-->
-
         </div>
         <!--Board-->
+        <div id="winner">
+            <h1 id="winnerText">VENCEDOR</h1>
+            <div id="symbolWinner"></div>
+            <i id="playAgain" class="fas fa-undo-alt" title="Jogar Novamente" onclick="game()"></i>
+        </div>
+        <!--Winner-->
     </div>
     <!--Game-->
 
-    <script src="app.js"></script>
+    <script src="game.js"></script>
 
 </body>
 
