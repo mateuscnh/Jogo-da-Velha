@@ -4,16 +4,12 @@ let playTime = "X";
 let gameOver = false;
 let board = ["", "", "", "", "", "", "", "", ""];
 let areas = document.getElementsByClassName("singleArea");
-let cont = 0;
-
-
 
 function game() {
     document.getElementById("winner").style.display = "none";
     removeAreas();
     changeScore();
     gameOver = false;
-    cont = 0;
 }
 
 playedAreas();
@@ -29,7 +25,7 @@ function playedAreas() {
                 await result();
                 if (gameOver) return;
                 playTime = "O";
-                await sleep(1000);
+                await sleep(500);
                 computerMove();
             }
         });
