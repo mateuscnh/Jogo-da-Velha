@@ -2,20 +2,6 @@
     display: none;
 }
 
-#logo2{
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: -30px 30px;
-    background-image: url("../../images/logo.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    transition: .2s;
-}
-
 #header h1{
     font-size: 20px;
 }
@@ -78,14 +64,6 @@
     margin: 0 5px;
 }
 
-#valueScore2{
-    flex: 1;
-    border-radius: 6px;
-    background: #222;
-    margin: 0 5px;
-}
-
-
 #symbolPlayer{
     order: 1;
     margin: 10px;
@@ -130,31 +108,14 @@
     }
 }
 
-#a{
-    margin: auto;
-    width: 315px;
-    padding: 0 0 4px 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-#b{
-    margin: auto;
-    width: 315px;
-    padding: 4px 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-#c{
-    margin: auto;
-    width: 315px;
-    padding: 4px 0 0 0;
-    display: flex;
-    justify-content: space-between;  
-}
-
 .area{
+    margin: auto;
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.singleArea{
     text-align: center;
     line-height: 9rem;
     width: 100px;
